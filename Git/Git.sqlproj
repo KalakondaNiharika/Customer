@@ -56,5 +56,32 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Stored Procedures\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\Users.sql" />
+    <Build Include="dbo\Tables\SaveUsers.sql" />
+    <Build Include="dbo\Tables\SaveUser.sql" />
+    <Build Include="dbo\Tables\Sale_Items.sql" />
+    <Build Include="dbo\Tables\Sale.sql" />
+    <Build Include="dbo\Tables\Products.sql" />
+    <Build Include="dbo\Tables\Product_Groups.sql" />
+    <Build Include="dbo\Tables\Customer_Type.sql" />
+    <Build Include="dbo\Tables\Customer_Page.sql" />
+    <Build Include="dbo\Stored Procedures\Update_ProductsGroup.sql" />
+    <Build Include="dbo\Stored Procedures\Update_Products.sql" />
+    <Build Include="dbo\Stored Procedures\Update_CustomerType.sql" />
+    <Build Include="dbo\Stored Procedures\Insert_CustomerType.sql" />
+    <Build Include="dbo\Stored Procedures\Insert_CustomerPage.sql" />
+    <Build Include="dbo\Stored Procedures\Get_ProductsGroup.sql" />
+    <Build Include="dbo\Stored Procedures\Get_Products.sql" />
+    <Build Include="dbo\Stored Procedures\Get_CustomerType.sql" />
+    <Build Include="dbo\Stored Procedures\Get_CustomerPage.sql" />
+    <Build Include="dbo\Stored Procedures\Del_ProductsGroup.sql" />
+    <Build Include="dbo\Stored Procedures\Del_Products.sql" />
+    <Build Include="dbo\Stored Procedures\Del_CustomerType.sql" />
+    <Build Include="dbo\Stored Procedures\Del_CustomerPage.sql" />
   </ItemGroup>
 </Project>
