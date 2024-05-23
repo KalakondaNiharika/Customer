@@ -20,7 +20,7 @@ begin
 	insert into Customer_Page
 	values( @Modetmp,@Codetmp, @Nametmp,@Datetmp,@Typetmp,@Emailtmp,@Mobiletmp,@Addresstmp ,@Citytmp ,@Statetmp,@Countrytmp ,@Notestmp )
     end
-	else if (@Modetmp='Update')
+	else if (@Modetmp='Modify')
 	begin
 	update Customer_Page
 	set Mode=@Modetmp,
